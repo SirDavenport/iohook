@@ -75,7 +75,7 @@ class IOHook extends EventEmitter {
     this._handleCtrl({ ctrlKey: true, type: 'keyup' });
     this._handleAlt({ altKey: true, type: 'keyup' });
     this._handleMeta({ metaKey: true, type: 'keyup' });
-    this._handleShift({ metaKey: true, type: 'keyup' });
+    this._handleShift({ shiftKey: true, type: 'keyup' });
   }
   /**
    * Register global shortcut. When all keys in keys array pressed, callback will be called
